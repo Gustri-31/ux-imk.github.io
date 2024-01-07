@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <style>
+    /*HOME*/
+.navbar {
+    background-color: #f8f5f5;
+    color: #fff;
+    padding: 0.7em 0; /* Mengatur padding lebih kecil */
+    order: 2; /* Mengubah urutan navbar */
+    top: 0;
+    z-index: 1000; 
+}
+/*SMK HKTI 2*/
+.navbar-secondary {
+    background-color: rgb(7, 161, 250);
+    padding: 0.1em 0; /* Mengatur padding lebih besar */
+    order: 1; /* Mengubah urutan navbar */
+    top: 0;
+    z-index: 1000; 
+}
+
+nav {
+    overflow: hidden;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: hsl(0, 0%, 6%);
+    font-weight: bold;
+}
+
+section {
+    padding: 20px;
+}
+/*logo*/
+nav img{
+	float: left;
+	height: 80px;
+}
+    /*gambar*/
+.image-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .image-item {
+            margin: 10px; /* Adjust the margin as needed */
+        }
+
+        .image-item img {
+            width: 550px; /* Set the desired width */
+            height: 350px; /* Set the desired height */
+            object-fit: cover; /* Maintain aspect ratio */
+            border: 1px solid #ddd; /* Optional border for aesthetics */
+            border-radius: 8px; /* Optional border-radius for aesthetics */
+}
+/*teks*/
+.image-caption {
+  position: absolute;
+  bottom: 0;
+  text-align: justify;
+  text-indent: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 10px;
+}
+
+.image-caption h3 {
+  margin: 0;
+}
+
+.image-caption p {
+  margin: 5px 0;
+}
+body{
+      height: 100vh;
+    margin: 0;
+      padding: 0;
+      background-size: cover; /* Membuat gambar latar belakang mengisi seluruh halaman */
+      background-position: center; /* Posisi gambar latar belakang di tengah halaman */
+      background-repeat: no-repeat; /* Menghindari pengulangan gambar latar belakang */
+      background-color: transparent;
+      font-family: 'Arial', sans-serif; /* Gantilah 'Arial' dengan jenis huruf yang diinginkan */
+    }
+.container {
+  color: #0f0f0f; /* Mengatur warna tulisan menjadi putih */
+    width: 80%;
+    padding: 0;
+    margin:  auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/* Float four columns side by side */
+.column {
+    float: left;
+    width: relative;
+    padding: 0px;
+  }
+  
+  /* Remove extra left and right margins, due to padding in columns */
+  .row {margin: 0 -10px;}
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  /*CARD SOSIAL MEDIA*/
+  /* Style the counter cards */
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
+    padding: 0px;
+    text-align: center;
+    background-color: #131212;
+  }
+  
+  /* Responsive columns - one column layout (vertical) on small screens */
+  @media screen and (max-width: 500px) {
+    .column {
+      width: 100%;
+      display: block;
+      margin-bottom: 20px;
+    }
+  }
+/*SMK HKTI 2*/
+.navbar-secondary {
+    background-color:rgb(48, 88, 121);
+    color: #0f0f0f;
+    padding: 0.10em 0; /* Mengatur padding lebih besar */
+    order: 2; /* Mengubah urutan navbar */
+    top: 0;
+    z-index: 1000; 
+}
+
+nav {
+    overflow: hidden;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: hsl(0, 0%, 4%);
+}
+
+section {
+    padding: 10px;
+}
+/*logo*/
+nav img{
+	float: left;
+	height: 80px;
+}
+/*gambar*/
+        .image-item {
+            margin: 10px; /* Adjust the margin as needed */
+        }
+
+        .image-item img {
+            width: auto; /* Set the desired width */
+            height:auto; /* Set the desired height */
+            object-fit: cover; /* Maintain aspect ratio */
+            border: 0px solid #ddd; /* Optional border for aesthetics */
+            border-radius: 8px; /* Optional border-radius for aesthetics */
+}
+.transparent-background {
+  background: url("image/MOS.jpg") no-repeat center center fixed;
+  background-size: cover;
+  position: relative;
+}
+
+/*submenu dropdown*/
+/* The dropdown container */
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+/* Dropdown button */
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color:transparent;;
+  font-family: inherit; /* Important for vertical align on mobile phones */
+  margin: 0; /* Important for vertical align on mobile phones */
+}
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  float: none;
+  color: rgb(119, 113, 113);
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+/* Add a grey background color to dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+</style>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>HKTI 2</title>
+</head>
+<body>
+
+    <header class="navbar navbar-secondary">
+        <nav>
+            <img src="image/logo.jpg.png" alt="logo">
+        <div class="container">
+            
+           <h1>SMK HKTI 2 </h1>
+            <nav>
+                <ul>
+                  <div class="dropdown">
+                    <a href="index.html"><button class="dropbtn">Home
+                      </button>
+                      </div>
+                    <div class="dropdown">
+                        <button class="dropbtn">Profil Sekolah
+                        <i class="fa fa-caret-down"></i>
+                            </button>
+                            <div class="dropdown-content">
+                            <a href="profil_sekolah.html">Sejarah</a>
+                              <a href="Visi_Misi-Tujuan.html">Visi Misi Dan Tujuan</a>
+                              <a href="Struktur.html">Struktur Organisasi</a>
+                              <a href="ekstrakulikuler.html"> Ekstrakulikuler</a>
+                              <a href="organisasi.html">Organisasi Siswa</a>
+                              <a href="lokasi.html">Lokasi Sekolah</a>
+                          </div>
+                          </div>
+                          <div class="dropdown">
+                            <button class="dropbtn">Guru & Karyawan
+                            
+                                <div class="dropdown-content">
+                                  <a href="kepala_sekolah.html">Kepala Sekolah</a>
+                                  <a href="guru.html">Guru Normatif & Adaptif</a>
+                                  <a href="guru-tkj.html">Guru Produktif TKJ</a>
+                                  <a href="guru-tkr.html">Guru Produktif TKR</a>
+                                  <a href="karyawan.html">Profil Karyawan</a>
+                                  
+                              </div>
+                              </div>
+                              <div class="dropdown">
+                                <button class="dropbtn">Kompetensi Keahlian
+                                <i class="fa fa-caret-down"></i>
+                                    </button>
+                                    <div class="dropdown-content">
+                                        <a href="tkr.html">Teknik Kendaraan Ringan Otomotif</a>
+                                        <a href="TKJ.html">Teknik Komputer Dan Jaringan</a>
+                                        <a href="tbsm.html">Teknik Bisnis Sepeda Motor</a>
+                                        <a href="tbo.html">Teknik Body Otomotif</a>
+                                  </div>
+                                  </div>
+                                  <div class="dropdown">
+                                    <button class="dropbtn">Prestasi
+                                    <i class="fa fa-caret-down"></i>
+                                        </button>
+                                        <div class="dropdown-content">
+                                        <a href="prestasi.html">Guru</a>
+                                          <a href="prestasi-siswa.html">Siswa</a>
+                                      </div>
+                                      </div>
+                                      <div class="dropdown">
+                                        <button class="dropbtn">PPDB
+                                    <i class="fa fa-caret-down"></i>
+                                         </button>
+                                    <div class="dropdown-content">
+                                    <a href="PPDB.html">Pendaftaran</a>
+                                     </div>
+                                     </div>
+                                     
+                </ul>
+            </nav>
+        </div>
+      </header>
+        </div>
+        </div>
+        </div>
+  </style>
+</style>
+<div class="image-container">
+    <div class="image-item">
+    <img src="image/gedung.jpg" alt="Kitten 1">
+    <div class="image-caption">
+        <h1><text-align: center>SEJARAH SMK HKTI 2 PURWAREJA KLAMPOK</h1></text-align:>
+        <p><text-align: justify>SMK HKTI 2 Purwareja Klampok yang berdiri sejak tahun pelajaran 1995/1996 dengan ijin operasional dari kanwil Depdikbud Propinsi jawa tengah No 505/103/I/1995 tanggal 4 April 1995 membuka 2 (dua) program keahlian yaitu Instalasi listrik dan Mekanik Otomotif
+
+            Pada tahun pelajaran 1998/1999 akreditasi sekolah murni/pertama memperoleh penilaian baik dan menerima status “Diakui” berdasarkan keputusan direktur pendidikan dasar dan menengah Nomor: 273/C.C7/kep/MN/1999 tanggal 17 september 1999.
+            
+            Sesuai dengan kurikulum edisi 1999 ada perubahan nama bidang/program keahlian yaitu menjadi Bidang/program keahlian Teknik Elektro/Teknik Instalasi listrik dan Teknik Mesin /Teknik Mekanik Otomotif
+            
+            Berdasarka Rekomendasi program baru dari Dinas Pendidikan Kabupaten Banjarnegara No.421.5/5009 tanggal 30 Nopember 2006 Smk HKTI 2 Purwareja Klampok membuka bidangh program keahlian Teknik informasi dan Komunikasi /Teknik Komputer dan Jaringan hasil Akreditasi BAN-S/M Propinsi Jawa Tengah tanggal 11 Nopembber 2009 Program Keahlian Teknik Komputer dan Jaringan memperoleh nilai 83 (B)
+            
+            Dalam perkembangan SMK HKTI 2 Purwareja Klampok  mengalami kenaikan jumlah siswa dan jumlah rombel.</p></text-align:>
+            
+      </div>
+</div>

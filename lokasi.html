@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+    <style>
+      
+        /* Add some CSS to center the map */
+        body, html {
+          height: 100%;
+          margin: 0;
+          overflow: hidden;
+        }
+        iframe {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+        }
+        body {
+      text-align: center;
+    }
+
+    h1 {
+      margin-top: 50px; /* Adjust the margin as needed */
+    }
+    body{
+      height: 100vh;
+    margin: 0;
+      padding: 0;
+      background-size: cover; /* Membuat gambar latar belakang mengisi seluruh halaman */
+      background-position: center; /* Posisi gambar latar belakang di tengah halaman */
+      background-repeat: no-repeat; /* Menghindari pengulangan gambar latar belakang */
+      background-color: transparent;
+      font-family: 'Arial', sans-serif; /* Gantilah 'Arial' dengan jenis huruf yang diinginkan */
+    }
+.container {
+  color: #0f0f0f; /* Mengatur warna tulisan menjadi putih */
+    width: 80%;
+    padding: 0;
+    margin:  auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/* Float four columns side by side */
+.column {
+    float: left;
+    width: relative;
+    padding: 0px;
+  }
+  
+  /* Remove extra left and right margins, due to padding in columns */
+  .row {margin: 0 -10px;}
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  /*CARD SOSIAL MEDIA*/
+  /* Style the counter cards */
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
+    padding: 0px;
+    text-align: center;
+    background-color: #131212;
+  }
+  
+  /* Responsive columns - one column layout (vertical) on small screens */
+  @media screen and (max-width: 500px) {
+    .column {
+      width: 100%;
+      display: block;
+      margin-bottom: 20px;
+    }
+  }
+/*SMK HKTI 2*/
+.navbar-secondary {
+    background-color:rgb(48, 88, 121);
+    color: #0f0f0f;
+    padding: 0.10em 0; /* Mengatur padding lebih besar */
+    order: 2; /* Mengubah urutan navbar */
+    top: 0;
+    z-index: 1000; 
+}
+
+nav {
+    overflow: hidden;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: hsl(0, 0%, 4%);
+}
+
+section {
+    padding: 10px;
+}
+/*logo*/
+nav img{
+	float: left;
+	height: 80px;
+}
+/*gambar*/
+        .image-item {
+            margin: 10px; /* Adjust the margin as needed */
+        }
+
+        .image-item img {
+            width: auto; /* Set the desired width */
+            height:auto; /* Set the desired height */
+            object-fit: cover; /* Maintain aspect ratio */
+            border: 0px solid #ddd; /* Optional border for aesthetics */
+            border-radius: 8px; /* Optional border-radius for aesthetics */
+}
+.transparent-background {
+  background: url("image/MOS.jpg") no-repeat center center fixed;
+  background-size: cover;
+  position: relative;
+}
+
+/*submenu dropdown*/
+/* The dropdown container */
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+/* Dropdown button */
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color:transparent;;
+  font-family: inherit; /* Important for vertical align on mobile phones */
+  margin: 0; /* Important for vertical align on mobile phones */
+}
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  float: none;
+  color: rgb(119, 113, 113);
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+/* Add a grey background color to dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+</style>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>HKTI 2</title>
+</head>
+<body>
+
+    <header class="navbar navbar-secondary">
+        <nav>
+            <img src="image/logo.jpg.png" alt="logo">
+        <div class="container">
+            
+           <h1>SMK HKTI 2 </h1>
+            <nav>
+                <ul>
+                  <div class="dropdown">
+                    <a href="index.html"><button class="dropbtn">Home
+                      </button>
+                      </div>
+                    <div class="dropdown">
+                        <button class="dropbtn">Profil Sekolah
+                        <i class="fa fa-caret-down"></i>
+                            </button>
+                            <div class="dropdown-content">
+                            <a href="profil_sekolah.html">Sejarah</a>
+                              <a href="Visi_Misi-Tujuan.html">Visi Misi Dan Tujuan</a>
+                              <a href="Struktur.html">Struktur Organisasi</a>
+                              <a href="ekstrakulikuler.html"> Ekstrakulikuler</a>
+                              <a href="organisasi.html">Organisasi Siswa</a>
+                              <a href="lokasi.html">Lokasi Sekolah</a>
+                          </div>
+                          </div>
+                          <div class="dropdown">
+                            <button class="dropbtn">Guru & Karyawan
+                            
+                                <div class="dropdown-content">
+                                  <a href="kepala_sekolah.html">Kepala Sekolah</a>
+                                  <a href="guru.html">Guru Normatif & Adaptif</a>
+                                  <a href="guru-tkj.html">Guru Produktif TKJ</a>
+                                  <a href="guru-tkr.html">Guru Produktif TKR</a>
+                                  <a href="karyawan.html">Profil Karyawan</a>
+                                  
+                              </div>
+                              </div>
+                              <div class="dropdown">
+                                <button class="dropbtn">Kompetensi Keahlian
+                                <i class="fa fa-caret-down"></i>
+                                    </button>
+                                    <div class="dropdown-content">
+                                      <a href="tkr.html">Teknik Kendaraan Ringan Otomotif</a>
+                                      <a href="TKJ.html">Teknik Komputer Dan Jaringan</a>
+                                      <a href="tbsm.html">Teknik Bisnis Sepeda Motor</a>
+                                      <a href="tbo.html">Teknik Body Otomotif</a>
+                                  </div>
+                                  </div>
+                                  <div class="dropdown">
+                                    <button class="dropbtn">Prestasi
+                                    <i class="fa fa-caret-down"></i>
+                                        </button>
+                                        <div class="dropdown-content">
+                                        <a href="prestasi.html">Guru</a>
+                                          <a href="prestasi-siswa.html">Siswa</a>
+                                      </div>
+                                      </div>
+                                      <div class="dropdown">
+                                        <button class="dropbtn">PPDB
+                                    <i class="fa fa-caret-down"></i>
+                                         </button>
+                                    <div class="dropdown-content">
+                                    <a href="PPDB.html">Pendaftaran</a>
+                                     </div>
+                                     </div>
+                                     
+                </ul>
+            </nav>
+        </div>
+      </header>
+        </div>
+        </div>
+        </div>
+  </style>
+      </style>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lokasi</title>
+</head>
+<body>
+<h1>Lokasi Sekolah</h1>
+  <!-- Your other HTML content goes here -->
+
+  <!-- Paste the Google Maps iframe code here -->
+  <iframe
+    width="600"
+    height="450"
+    style="border:0"
+    loading="lazy"
+    allowfullscreen
+    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d253180.6695800056!2d109.429536!3d-7.470999!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e655111f5645131%3A0x7bbced3dd18fc990!2sSMK%20HKTI%202%20Purwareja%20Klampok!5e0!3m2!1sen!2sus!4v1703777592911!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </iframe>
+
+</body>
+</html>
